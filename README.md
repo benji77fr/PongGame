@@ -1,7 +1,7 @@
 # Pong Game
 
 ***
-##Overview
+## Overview
 **Pong Game** is made in Python using the **Kivy** framework. 
 ***
 ## Install Kivy
