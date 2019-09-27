@@ -5,6 +5,7 @@ kivy.require('1.11.1')
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.uix.widget import Widget
+from kivy.graphics import Color
 from kivy.properties import ( NumericProperty, ReferenceListProperty, ObjectProperty )
 from kivy.vector import Vector
 from kivy.clock import Clock
@@ -46,7 +47,7 @@ class PongGame(Widget):
     def _keyboard_closed(self):
         self._keyboard.unbind(on_key_down = self._on_keyboard_down)
         self._keyboard = None
-    
+
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         if keycode[1] == 'z':
             self.player1.center_y += 10
